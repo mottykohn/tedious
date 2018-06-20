@@ -133,7 +133,7 @@ module.exports = class BulkLoad extends EventEmitter {
         length: c.length,
         scale: c.scale,
         precision: c.precision,
-        value: row[arr ? i : c.objName]
+        value: _c.type.validate(row[arr ? _i : _c.objName])
       }, this.options);
     }
   }
